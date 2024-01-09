@@ -1,6 +1,6 @@
 const SectionSeven = () => {
   return (
-    <div className="flex flex-wrap gap-4 justify-center items-center">
+    <div className="flex flex-wrap gap-8 justify-center items-center">
       <div className="flex flex-col gap-2 justify-center items-center">
         <p>Cleaner fashion</p>
         <img src="/section7/image-sec7-2.png" alt="" />
