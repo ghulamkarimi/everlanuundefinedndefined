@@ -9,6 +9,11 @@ type Props = {
 const FavoritCarusel = ({ slides }: Props) => {
   const [currentSlide] = useState(0);
   const [caruselSlideIndex, setCaruselSlideIndex] = useState(0);
+  const slidesToShow = Math.min(
+    (window.innerWidth < 796 ? 2 : 2),
+    (window.innerWidth < 1024 ? 3 : 2),
+    (window.innerWidth < 596 ? 1 : 2)
+  );
 
   const handleCaruselNavigation = (direction: "forward" | "backward") => {
     switch (direction) {
@@ -42,13 +47,14 @@ const FavoritCarusel = ({ slides }: Props) => {
 
       <div className="overflow-hidden relative ">
         <div
-          className={`flex gap-4 justify-center px-10 ease-out duration-40 `}
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          className={`flex gap-4 justify-center px-10 ease-out duration-40  `}
+          style={{ transform: `translateX(-${currentSlide * 100}%)`, }}
         >
           {slides && slides.length > 0 ? (
             slides
-              .slice(caruselSlideIndex, caruselSlideIndex + 3)
-              .map((s, index) => <div key={index}>{s.content}</div>)
+           
+              .slice(caruselSlideIndex, caruselSlideIndex + slidesToShow)
+              .map((s, index) => <div className="min-w-60 " key={index}>{s.content}</div>)
           ) : (
             <p>No slides available</p>
           )}
