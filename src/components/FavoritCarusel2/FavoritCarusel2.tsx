@@ -49,7 +49,7 @@ const FavoriteCarusel2 = () => {
     }
   };
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden border border-sky-500 ">
       <div
         className={`flex ease-out duration-500 `}
         style={{
@@ -67,7 +67,7 @@ const FavoriteCarusel2 = () => {
       </div>
       <div className="absolute flex z-100 top-0 h-full w-full justify-between items-center ">
         <button onClick={() => handleArrowClick("prev")}>
-          <img src="/favoriteImage/CaretLeft.svg" alt="" />
+          <img src="/favoriteImage/CaretLeft.svg"  alt="" />
         </button>
         <button onClick={() => handleArrowClick("next")} className="mr-10 ">
           <img src="/favoriteImage/CaretRight.svg" alt=""  />

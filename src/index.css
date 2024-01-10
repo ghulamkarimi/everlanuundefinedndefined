@@ -2,10 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 576px){
-    .fv-carousel-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
- }
- }
+ 

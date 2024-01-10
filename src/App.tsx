@@ -1,6 +1,8 @@
  
-import FavoriteCarusel2 from "./components/FavoritCarusel2/FavoritCarusel2";
+ 
 import FavoritCarusel from "./components/FavoritCarusel/FavoritCarusel";
+import Carousel from "./components/Carousel";
+import FavoriteCarusel2 from "./components/FavoritCarusel2/FavoritCarusel2";
  
  
 const App = () => {
@@ -64,8 +66,9 @@ const App = () => {
   
   return (
     <div className="w-[60%] m-auto pt-11 flex flex-col gap-8 ">
-       <FavoritCarusel slides={slides} /> 
-      <FavoriteCarusel2  />
+       <FavoritCarusel slides={slides} />  
+       <FavoriteCarusel2  />
+      <Carousel />
       
     </div>
   );
