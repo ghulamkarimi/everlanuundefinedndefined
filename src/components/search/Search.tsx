@@ -7,6 +7,8 @@ const Search = () => {
   <div className="p-4 rounded justify-start items-center gap-2.5 flex">
     <div className="text-neutral-500 text-xs font-normal font-['Maison Neue'] leading-none tracking-tight">Cancel</div>
   </div>
+
+  
 </div>
   );
 };
