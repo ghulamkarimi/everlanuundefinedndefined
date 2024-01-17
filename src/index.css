@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
- 
+.searchInput::placeholder,
+.searchInput:-ms-input-placeholder,
+.searchInput::-ms-input-placeholder {
+    background-color: transparent;
+}
