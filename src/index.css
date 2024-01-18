@@ -2,14 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-.searchInput::placeholder,
-.searchInput:-ms-input-placeholder,
-.searchInput::-ms-input-placeholder {
-    background-color: transparent;
-}
-.cascad{
-    animation-name: fadeInOut, moveLeft300px, bounce;
-animation-duration: 2.5s, 5s;
-animation-iteration-count: 2, 1;
 
-}
+ 
