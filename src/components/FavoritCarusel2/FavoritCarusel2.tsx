@@ -49,9 +49,9 @@ const FavoriteCarusel2 = () => {
     }
   };
   return (
-    <div className="relative overflow-hidden border border-sky-500 ">
+    <div className="relative overflow-hidden ">
       <div
-        className={`flex ease-out duration-500 `}
+        className={`flex ease-out duration-500  `}
         style={{
           transform: `translateX(-${currentSlideIndex * (100 / slides.length)}%)`,
           width: `${slides.length * 100}%`,
