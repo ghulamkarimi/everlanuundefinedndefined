@@ -4,9 +4,9 @@ import { Slide } from "./FavoritCarusel2";
 const SlideItem = ({ title, quote, user, linkName, linkUrl, image}: Slide) => {
     return (
         <div
-            className="w-full h-full sm:w-auto sm:h-auto lg:relative mx-9 "
+            className="w-full h-full sm:w-auto sm:h-auto 2xl:w-auto lg:relative mx-9  pt-4 "
         >
-            <div className="container w-full flex flex-col lg:flex-row gap-8 lg:gap-2 justify-center items-center">
+            <div className="container w-full flex flex-col 2xl:px-60 lg:flex-row gap-8 2xl:gap-8  lg:gap-2  justify-center items-center">
                 <div className="  text-black text-2xl lg:absolute lg:top-40 lg:left-0 lg:text-base font-normal font-['Maison Neue'] leading-normal tracking-wide ">
                     {title}
                 </div>

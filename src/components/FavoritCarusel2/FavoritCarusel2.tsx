@@ -10,6 +10,7 @@ export interface Slide {
   linkUrl: string;
   image: string;
 }
+
 const FavoriteCarusel2 = () => {
   const slides: Slide[] = [
     {
@@ -39,8 +40,10 @@ const FavoriteCarusel2 = () => {
       linkUrl: "",
       image: "/favoriteImage/image.png"
     }
-  ]
+  ];
+
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
   const handleArrowClick = (direction: "next" | "prev") => {
     if (direction === "next" && currentSlideIndex < slides.length - 1) {
       setCurrentSlideIndex((prevIndex) => prevIndex + 1);
@@ -48,10 +51,11 @@ const FavoriteCarusel2 = () => {
       setCurrentSlideIndex((prevIndex) => prevIndex - 1);
     }
   };
+
   return (
-    <div className="relative overflow-hidden ">
+    <div className="relative overflow-hidden">
       <div
-        className={`flex ease-out duration-500  `}
+        className={`flex ease-out duration-500`}
         style={{
           transform: `translateX(-${currentSlideIndex * (100 / slides.length)}%)`,
           width: `${slides.length * 100}%`,
@@ -65,15 +69,16 @@ const FavoriteCarusel2 = () => {
           <p>No slides available</p>
         )}
       </div>
-      <div className="absolute flex z-100 top-0 h-full w-full justify-between items-center ">
+      <div className="absolute flex z-100 top-0 h-full w-full justify-between items-center">
         <button onClick={() => handleArrowClick("prev")}>
-          <img src="/favoriteImage/CaretLeft.svg"  alt="" />
+          <img src="/favoriteImage/CaretLeft.svg" alt="" />
         </button>
-        <button onClick={() => handleArrowClick("next")} className="mr-10 ">
-          <img src="/favoriteImage/CaretRight.svg" alt=""  />
+        <button onClick={() => handleArrowClick("next")} className="mr-10">
+          <img src="/favoriteImage/CaretRight.svg" alt="" />
         </button>
       </div>
     </div>
   );
 };
+
 export default FavoriteCarusel2;
