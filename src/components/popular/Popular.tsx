@@ -28,8 +28,8 @@ const PopularImage: IImage[] = [
 
 const Popular = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:inline-flex md:text-start py-8 lg:px-[150px]  ">
-      <h4 className="text-center md:text-start w-full">Popular Categories</h4>
+    <div className="flex flex-col justify-center items-center  md:text-start py-8 lg:px-[150px]  ">
+      <h4 className="text-center md:text-start w-full md:ml-[267px]">Popular Categories</h4>
 
       <div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
